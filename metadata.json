@@ -1,0 +1,5 @@
+{
+  "name": "StreamFlow",
+  "description": "A modern, lightweight movie and TV show streaming application inspired by Netflix. Features include trending content, search, watchlist management, and multi-source streaming support.",
+  "requestFramePermissions": []
+}
