@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Menu, X, Home, Library, Tv, Film } from 'lucide-react';
+import { Search, Menu, X, Home, Library, Tv, Film, Magnet } from 'lucide-react';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +19,7 @@ export const Navbar = () => {
     { name: 'Home', path: '/', icon: <Home size={18} /> },
     { name: 'Movies', path: '/movies', icon: <Film size={18} /> },
     { name: 'TV Shows', path: '/tv', icon: <Tv size={18} /> },
+    { name: 'Magnet', path: '/magnet', icon: <Magnet size={18} /> },
     { name: 'Library', path: '/library', icon: <Library size={18} /> },
   ];
 

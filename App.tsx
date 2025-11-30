@@ -7,6 +7,7 @@ import { Player } from './pages/Player';
 import { SearchPage } from './pages/Search';
 import { Library } from './pages/Library';
 import { GenrePage } from './pages/GenrePage';
+import { MagnetPlayer } from './pages/MagnetPlayer';
 import { ApiKeyModal } from './components/ApiKeyModal';
 
 // Wrapper to conditionally render Header/Footer based on route (hide on player)
@@ -43,6 +44,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/library" element={<Library />} />
+          <Route path="/magnet" element={<MagnetPlayer />} />
           <Route path="/movies" element={<GenrePage type="movie" />} />
           <Route path="/tv" element={<GenrePage type="tv" />} />
           <Route path="/:type/:id" element={<Details />} />

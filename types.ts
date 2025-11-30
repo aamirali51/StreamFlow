@@ -62,3 +62,28 @@ export interface WatchHistoryItem {
   timestamp: number;
   progress: number; // 0 to 1
 }
+
+export interface TorrentFile {
+  name: string;
+  index: number;
+  size: number;
+  path: string;
+  type: string;
+}
+
+export interface TorrentMetadata {
+  infoHash: string;
+  name: string;
+  files: TorrentFile[];
+  subtitles: TorrentFile[];
+}
+
+export interface TorrentStats {
+  progress: number;
+  downloadSpeed: number;
+  uploadSpeed: number;
+  numPeers: number;
+  timeRemaining: number;
+  downloaded: number;
+  length: number;
+}
